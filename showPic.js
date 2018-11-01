@@ -5,4 +5,5 @@ function showPic (whichPic)
     placeHolder.setAttribute("src", source);
     var body_element = document.getElementsByTagName("body")[0];
     console.log(body_element.childNodes);
+    console.log(1849);
 }
