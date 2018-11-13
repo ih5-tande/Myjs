@@ -12,7 +12,7 @@ function showPicText(whichPic)
     console.log(description.childNodes[0].nodeValue)
 
 }
-/*document.getElementByTagName("p")[0].setAttribute('value',text);*/
+
 
 
 /*function countBodyChildren(){
