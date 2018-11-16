@@ -1,14 +1,12 @@
 function showPicText(whichPic)
 {
     var source = whichPic.getAttribute("href");
+    var text = whichPic.getAttribute("title");
     var placeHolder = document.getElementById("placeloader");
     placeHolder.setAttribute("src", source);
     var description=document.getElementById("description");
-    var text = whichPic.getAttribute("title");
-    //设置p标签内的属性，value为text内容
-    document.getElementsByTagName("p")[0].setAttribute("value",text);
-    //设置文本的值，要用nodevalue
-    description.firstChild.nodeValue=text;
+    document.getElementsByTagName("p")[0].setAttribute("title",text);//设置<p title="xxxx">
+    description.firstChild.nodeValue=text; //设置<p>choose an image</p>的文本节点，用nodevalue
     console.log(description.childNodes[0].nodeValue)
 
 }
